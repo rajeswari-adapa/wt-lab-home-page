@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <Style>
+        body{
+             background: linear-gradient(to top left,#ffcc00 0%,#33ccff 100%);
+             /* margin:40px; */
+             padding: 10px;
+        }
+      #mySearch{
+        width: 80px;
+     font-size: 18px;
+     padding: 7px;
+     border: 1px solid #ddd;
+      }
+      #myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+      li{
+        list-style-type: none;
+      }
+    </Style>
+</head>
+<body>
+    <div>
+        <h1>List Of Branches</h1>
+        <details>
+            <summary>CSE</summary> 
+            <p>Computer Science Engineering 💻.</p>
+        </details> 
+        
+           <details>
+            <summary>ECE</summary>
+             <p>Electrical Science Engineering</p>
+            </details>
+
+            <details>
+           <summary>CE</summary> 
+           <p>Civil Engineering</p>
+        </details>
+
+        <details>
+        <summary>MECH</summary>
+      <p>Mechanical Engineering</p>
+    </details>
+
+    <details>
+        <summary>MME</summary>
+          <p> Material and Metallurgical Engineering</p>
+    </details> 
+        
+    <details> 
+        <summary>CHEM</summary>
+         <p> Chemical Engineering</p>
+    </details> 
+    <details> 
+        <summary> EEE</summary>  
+        <p>Electrical and Electronic Engineering</p><br><br>  
+   </details> 
+    </div>
+    <div>
+         <input type="text" id="mySearch" placeholder="Search.." onkeyup="myFunction();">
+    </div>
+    <div>
+        <ul id="myMenu">
+            <li><a href="#" >N180416</a></li>
+            <li><a href="#" >N180441</a></li>
+            <li><a href="#" >N180256</a</li>
+            <li><a href="#" >N181156</a></li>
+            <li><a href="#" >N180201</a></li>
+            <li><a href="#" >N180202</a></li>
+            <li><a href="#" >N180406</a></li>
+            <li><a href="#" >N180407</a></li>
+            <li><a href="#" >N180803</a></li>
+            <li><a href="#" >N180841</a></li>
+            <li><a href="#" >N181131</a></li>
+            <li><a href="#" >N181133</a></li>
+            <li><a href="#" >N180158</a></li>
+            <li><a href="#" >N180123</a></li>
+            <li><a href="#" >N180007</a></li>
+            <li><a href="#" >N180911</a></li>
+            <li><a href="#" >N180806</a></li>
+            <li><a href="#" >N180857</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+   
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</html>

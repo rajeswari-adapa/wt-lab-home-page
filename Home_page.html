@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      
+
+        <title>Home page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta  name="description" content="Rgukt Nuzvid website designed by Rajeswari Adapa a student from CSE  department">
+        <meta name="keywords" content="iiit,rguktn">
+        <meta nmae="author" content="Rajeswari Adapa">
+        <link rel="stylesheet" type="text/css"href="homepage.css">
+    </head>
+    <style>
+      .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+   background-color:#ff66ff;
+  color:blueviolet;
+  text-align: center;
+  text-decoration: underline;
+ 
+}
+
+    .footer p{
+  color: rgb(41, 32, 36);
+  font-weight: bold;
+}
+#img2{
+  float:right;
+}
+    </style>
+    <body style="background: linear-gradient(to top left, #ccff33 0%, #66ff66 100%)">
+        <div>
+            <img src="Logonew.png" width="50px" height="50px" align="left" id="img1">
+            <h1>University</h1>
+            <img src="menubar.png" width="50px" height="50px"  id="img2" onclick="menu();"><br><hr>
+        </div>
+        <div >
+          <nav id="hor" class="nav">
+            <ul>
+           <li><a href="#" id="home"><img src="homeicon.png"class="navimg" title="Home">Home</a>
+           <li> <a href="#" id="exam"><img src="exam.jpg"   class="navimg" title="Exam">Exam</a>
+            <!-- <a href="#" ><img src="setting.jpg" class="navimg" title="Branches">Branches</a> -->
+            <li><a href="#"><img src="setting.jpg" class="navimg" title="Branches">Branch </a>
+            <div class="inside">
+              <ul>
+                <li class="hover-me"><a href="#">CSE<i class="fa-right"></i>
+                <div class="inside-in">
+                  <ul>
+                    <li><a href="#">Student</a></li>
+                    <li><a href="#">Faculty</a></li>
+                  </ul>
+                </div></a></li>
+                <li class="hover-me"><a href="#">ECE<i class="fa-right"></i>
+                  <div class="inside-in">
+                    <ul>
+                      <li><a href="#">Student</a></li>
+                      <li><a href="#">Faculty</a></li>
+                    </ul>
+                  </div></a></li>
+                  <li class="hover-me"><a href="#">Civil<i class="fa-right"></i>
+                    <div class="inside-in">
+                      <ul>
+                        <li><a href="#">Student</a></li>
+                        <li><a href="#">Faculty</a></li>
+                      </ul>
+                    </div></a></li>
+              </ul>
+            </div>
+           
+           
+           <li> <a href="#" id="ph"><img src="phone.jpg" class="navimg" title="Contact Us">Contact</a>
+          </nav>
+          <nav id="vertical">
+            <a href="https.www.rguktn.ac.in"><img src="homeicon.png" class="navimgv" title="Home"></a><br>
+            <a href="https.www.rguktn.ac.in"><img src="exam.jpg" class="navimgv" title="Exam"></a><br>
+            <a href="https.www.rguktn.ac.in"><img src="setting.jpg" class="navimgv" title="Branches"></a><br>
+            <a href="https.www.rguktn.ac.in"><img src="phone.jpg" class="navimgv" title="Contact Us"></a><br>
+          </nav>
+          
+          <div id="empty"></div>
+        </body>
+      </div>
+      <footer class="footer">
+       <p><small>&#169;designed and devoleped by Rajeswari Adapa @ all rights reserved</small></p>
+       <a href="https://www.hitwebcounter.com" target="_blank"></a>
+       <img src="https://hitwebcounter.com/counter/counter.php?page=8013812&style=0001&nbdigits=5&type=page&initCount=1000" title="Free Counter" Alt="web counter"   border="0" /></a> 
+      </footer>
+     
+         <script>
+          function menu(){  
+            // document.getElementById("hor").style.visibility="hidden";
+            document.getElementById("vertical").style.visibility="visible";
+        }
+     
+
+function home(){
+  
+}
+        $("#home").click(function(){
+        $("#empty").load("login.html");
+        });
+        $("#exam").click(function(){
+        $("#empty").load("exam.html");
+        });
+        $("#ph").click(function(){
+        $("#empty").load("contact.html");
+        });
+   
+   
+   
+          </script>
+
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>exam</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+    .side-body{
+        
+        width: "10px";
+        /* height:"100%"; */
+        border :1px solid green;
+        float:left;
+        padding:20px;
+        /* display: inline; */
+    }
+     /* #lists{
+        list-style-type: none;
+        text-decoration: underline;
+        height:"100%";
+    } */
+  a{
+    display:block;
+    padding: 8px;
+  }
+  li{
+    margin: 10px;
+    padding: 10px;
+  }
+  .p{
+    font-size: 30px;
+  }
+  /* body{
+     
+    background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
+  } */
+    a:visited{
+        color:red;
+    }
+    a:hover{
+        background-color: rgb(196, 173, 173);
+    }
+    a.active{
+        color: greenyellow;
+    }
+    .main-body{
+        /* height: 100%; */
+        margin-left: 20px;
+        /* display: inline-flexbox; */
+    } 
+    
+</style>
+</head>
+<body>
+        <aside>
+            <div>
+            <nav class="side-body">
+            <!-- <h1>select Branch</h1> -->
+            <p class="p">select branch</p>
+                <a href="CSE">CSE</a>
+                <a href="ECE">ECE</a>
+                <a href="CIVIL">CIVIL</a>
+                <a href="MECH">MECH</a>
+                <a href="#">MME</a>
+                <a href="#">CHEM</a>
+                <a href="#">EEE</a>
+            </nav></div></aside>
+            <main>
+                <div class="main-body">
+                    
+                   <h1>Instructions</h1>
+                    <ul > 
+                    <li type="👉">Be in uniform</li>
+                   <li >Be Punctual. ...</li>
+                    <li >You may leave the hall after the first 30 minutes of the exam.</li>
+                    <li >Wear your identity card. ...</li>
+                    <li >Please switch off your mobile phones and keep it in your bags</li>
+                    </li></ul>
+                    <input type="button" value="Take Test"  onclick="getConfirmation();"> 
+                    <input type="file" value="upload test"  onclick="getValue();"> 
+                </div></main>
+    </main>
+    </forms>
+    <script>
+        function getConfirmation() {
+               var retVal = confirm("Do you want to continue ?");
+               if( retVal == true ) {
+                  document.write ("User wants to continue!");
+                  return true;
+               } else {
+                  document.write ("User does not want to continue!");
+                  return false;
+               }
+            }
+            function getValue() {
+               var retVal = prompt("Enter your name : ", "your name here");
+               document.write("You have entered : " + retVal);
+            }
+    </script>
+</body>
+</html>
